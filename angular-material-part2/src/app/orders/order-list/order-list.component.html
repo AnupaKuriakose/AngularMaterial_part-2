@@ -1,0 +1,19 @@
+<mat-tab-group>
+  <mat-tab label="Orders">
+    <!--If we dont use the ngtemplate around theses tabs, if we have a fetch query in each
+    tabs then they will be eagrly loaded to avoid that and to load lazily =have it in ng template-->
+    <ng-template matTabContent>
+      <p>Orders here</p>
+    </ng-template>
+  </mat-tab>
+  <mat-tab label="Shipments">
+    <ng-template matTabContent>
+      <p>Shipments here</p>
+    </ng-template>
+  </mat-tab>
+  <mat-tab label="Archived">
+    <ng-template matTabContent>
+      <p>Old orders here</p>
+    </ng-template>
+  </mat-tab>
+</mat-tab-group>
